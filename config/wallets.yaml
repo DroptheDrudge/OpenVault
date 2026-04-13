@@ -1,0 +1,11 @@
+wallets:
+  - address: "5Q544fKrFoe6tsEbD7S8EmxGTJYAKtTVbNUqQqU8KJ2E"
+    nickname: "Whale_A"
+  - address: "H8sMJSCBfFQFH4zZd8sJd2C12Xv1LzRr2e8y3pZrQyKx"
+    nickname: "Whale_B"
+  - address: "9WzDXwZz3QmZz1Zz2Zz3Zz4Zz5Zz6Zz7Zz8Zz9Zz0Zz"
+    nickname: "Whale_C"
+  - address: "A1b2C3d4E5f6G7h8I9j0K1l2M3n4O5p6Q7r8S9t0U1v"
+    nickname: "Whale_D"
+  - address: "XxYyZz1234567890abcdefghijklmnopqrstuvwxyz"
+    nickname: "Whale_E"

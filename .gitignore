@@ -1,0 +1,13 @@
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.DS_Store
+data/*.db
+logs/*
+!logs/.gitkeep
+obsidian/daily/*
+obsidian/trades/*
+!obsidian/daily/.gitkeep
+!obsidian/trades/.gitkeep

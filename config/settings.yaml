@@ -1,0 +1,66 @@
+wallet:
+  initial_sol: 3.0
+  sol_price_usd: 100.0
+  max_position_pct: 0.20
+  max_concurrent_positions: 5
+
+fees:
+  jupiter_fee_pct: 0.001
+  sol_tx_cost_sol: 0.00025
+
+slippage:
+  base_pct: 0.5
+  mc_under_100k: 5.0
+  mc_100k_to_1m: 3.0
+  mc_over_1m: 1.5
+
+apis:
+  dexscreener_url: "https://api.dexscreener.com/latest/dex/search?q=solana"
+  pump_fun_url: "https://frontend-api.pump.fun/coins?offset=0&limit=50&sort=created_timestamp&order=DESC"
+  helius_api_key: "YOUR_HELIUS_API_KEY_HERE"
+  helius_rpc_url: "https://mainnet.helius-rpc.com/?api-key={api_key}"
+  helius_api_url: "https://api.helius.xyz/v0"
+
+scoring:
+  min_score: 60
+  weights:
+    volume_acceleration: 0.15
+    price_velocity: 0.15
+    whale_count: 0.20
+    whale_buy_pressure: 0.15
+    holder_growth: 0.10
+    buy_sell_ratio: 0.15
+
+entry_criteria:
+  min_age_minutes: 5
+  max_age_minutes: 120
+  min_liquidity_usd: 5000
+  min_market_cap_usd: 10000
+  max_market_cap_usd: 1000000
+
+position_sizing:
+  base_min_pct: 0.05
+  base_max_pct: 0.15
+  mc_under_100k_multiplier: 0.5
+  mc_100k_to_1m_multiplier: 0.8
+
+exit_strategy:
+  tp1_profit_pct: 0.50
+  tp1_sell_pct: 0.25
+  tp2_profit_pct: 1.00
+  tp2_sell_pct: 0.25
+  trailing_start_profit_pct: 0.50
+  trailing_drop_pct: 0.20
+  hard_stop_loss_pct: 0.10
+  time_stop_minutes: 240
+  whale_exit_min_sellers: 2
+  whale_exit_sell_pct: 0.50
+
+paths:
+  db: "data/meme_sniper.db"
+  obsidian_daily: "obsidian/daily"
+  obsidian_trades: "obsidian/trades"
+  logs: "logs"
+
+loop:
+  interval_seconds: 30
